@@ -1,2 +1,7 @@
-# VoteApplication
-freecodecamp challenge
+Work in Progress
+
+
+Voting Application
+-------------------
+
+\ ゜o゜)ノ

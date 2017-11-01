@@ -1,0 +1,28 @@
+mixin poll_form()
+  #newpoll.container
+      h2 New Poll
+
+      #poll.controls
+        form(role='form' novalidate)
+          .form-group
+            label.control-label Poll Name
+            .input-group.col-sm-12
+              input.form-control(type='text', name="votename", placeholder="What's your favourite hot beverage?" autocomplete="off", autofocus required)
+          #options.form-group        
+            label.control-label Poll Options
+            .form-group
+              .input-group
+                input.form-control(type='text', placeholder='Black Tea' autocomplete="off")
+                span.input-group-btn
+                  button.remove-me.btn.btn-danger - 
+            .form-group 
+              .input-group
+                input.form-control(type='text', placeholder='Coffee' autocomplete="off")
+                span.input-group-btn
+                  button.remove-me.btn.btn-danger - 
+          
+          .form-actions
+            .form-group 
+              button#add-more.btn.btn-default(type='button') Add Option
+            .form-group 
+              button.btn.btn-primary(type='submit') Submit

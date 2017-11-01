@@ -1,0 +1,16 @@
+1. load poll by url
+
+2. add vote functionality to a poll
+3. add possibility to add new poll after poll creation
+4. prevent poll duplicates
+5. don't allow submission if there's less than 2 options in a poll
+6. show polls per current user
+7. add menu "New poll" and "Show my polls"
+8. user can change password
+9. check user is unique (+ add login via e-mail??)
+10. don't allow voting for unregistered users
+11. show voting progress for selected poll
+12. user can delete a poll from his own poll list
+13. handle errors while registering user, creating poll, etc.!!! Important
+14. 404
+15. something I couldn't recall

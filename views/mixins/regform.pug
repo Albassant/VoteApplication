@@ -1,0 +1,15 @@
+mixin reg_form(registered, action_url, ref_path)
+  form.login(role="form", action=action_url, method="post")
+    .form-group
+      label.control-label Name
+      input.form-control(type="text", name="username", autofocus)
+      input(type='hidden' name='ref_path' value= ref_path)
+    .form-group
+      label.control-label Password
+      input.form-control.password(type="password",name="password")
+    .form-actions
+      if registered
+        button.btn.btn-primary(type='submit') Log In
+        button.btn.btn-link(type="button" onClick="location.href='/register'") Not registered yet?
+      else
+        button.btn.btn-primary(type='submit') Sign In

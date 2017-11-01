@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  if (!user)
+    p You are currently not logged in. Please, login or register...
+  else
+    include ./mixins/pollform
+    +poll_form()
+    
+    div#polllink(hidden)
+      h2 Here's a link to your poll:
+      h4
+    

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 Register
+        p Registered users get access to poll creation and can vote on any poll
+    
+        include ./mixins/regform
+        +reg_form(false, "/register", ref_path)
